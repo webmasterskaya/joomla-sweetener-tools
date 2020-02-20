@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.9" type="plugin" group="system" method="upgrade">
+    <name>PLG_SYSTEM_SWEETENER_TOOLS</name>
+    <author>Artem Vasilev - Webmasterskaya</author>
+    <creationDate>20.02.2020</creationDate>
+    <copyright>Copyright (C) 2020 Webmasterskaya. All rights reserved.</copyright>
+    <license>GNU General Public License version 3 or later; see LICENSE.txt</license>
+    <authorEmail>dev@webmasterskaya.xyz</authorEmail>
+    <authorUrl>https://webmasterskaya.xyz</authorUrl>
+    <version>__DEPLOY_VERSION__</version>
+    <description>PLG_SYSTEM_SWEETENER_TOOLS_DESCRIPTION</description>
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.plg_system_sweetener_tools.ini</language>
+        <language tag="en-GB">en-GB/en-GB.plg_system_sweetener_tools.sys.ini</language>
+        <language tag="ru-RU">ru-RU/ru-RU.plg_system_sweetener_tools.ini</language>
+        <language tag="ru-RU">ru-RU/ru-RU.plg_system_sweetener_tools.sys.ini</language>
+    </languages>
+    <files>
+        <folder>fields</folder>
+        <folder>forms</folder>
+        <filename plugin="sweetener_tools">sweetener_tools.php</filename>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field type="note" label="PLG_SYSTEM_SWEETENER_TOOLS_UNSET_MODULES"
+                       description="PLG_SYSTEM_SWEETENER_TOOLS_UNSET_MODULES_DESC"/>
+                <field name="unset_modules" type="radio"
+                       label="PLG_SYSTEM_SWEETENER_TOOLS_ENABLE"
+                       class="btn-group btn-group-yesno"
+                       default="0">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+    <updateservers>
+        <server type="extension" priority="1" name="joomla-sweetener-tools">
+            https://webmasterskaya.xyz/update?extension=plg_system_sweetener_tools
+        </server>
+    </updateservers>
+</extension>

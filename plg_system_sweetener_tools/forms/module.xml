@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="params">
+        <fieldset name="unset" label="PLG_SYSTEM_SWEETENER_TOOLS_MODULE_UNSET">
+            <field name="unset_empty" type="radio"
+                   label="PLG_SYSTEM_SWEETENER_TOOLS_MODULE_UNSET_EMPTY"
+                   description="PLG_SYSTEM_SWEETENER_TOOLS_MODULE_UNSET_EMPTY_DESC"
+                   class="btn-group btn-group-yesno"
+                   default="0">
+                <option value="1">JYES</option>
+                <option value="0">JNO</option>
+            </field>
+            <field name="exclude_mode" type="list"
+                   label="PLG_SYSTEM_SWEETENER_TOOLS_MODULE_UNSET_METHOD"
+                   description="PLG_SYSTEM_SWEETENER_TOOLS_MODULE_UNSET_METHOD_DESC"
+                   default="0">
+                <option value="1">PLG_SYSTEM_SWEETENER_TOOLS_MODULE_UNSET_METHOD_EXCLUDED</option>
+                <option value="0">PLG_SYSTEM_SWEETENER_TOOLS_MODULE_UNSET_METHOD_INCLUDED</option>
+            </field>
+            <field name="exclude_components" type="unsetcomponents" addfieldpath="/plugins/system/sweetener_tools/fields"
+                   label="PLG_SYSTEM_SWEETENER_TOOLS_MODULE_UNSET_COMPONENTS"
+                   multiple="true"
+                   class="input-xxlarge">
+                <option value="com_users.profile:edit"/>
+            </field>
+        </fieldset>
+    </fields>
+</form>

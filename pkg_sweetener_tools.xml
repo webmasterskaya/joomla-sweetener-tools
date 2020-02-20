@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.9" type="package" method="upgrade">
+    <name>pkg_sweetener_tools</name>
+    <packagename>sweetener_tools</packagename>
+    <author>Artem Vasilev - Webmasterskaya</author>
+    <creationDate>20.02.2020</creationDate>
+    <copyright>Copyright (C) 2020 Webmasterskaya. All rights reserved.</copyright>
+    <license>GNU General Public License version 3 or later; see LICENSE.txt</license>
+    <authorEmail>dev@webmasterskaya.xyz</authorEmail>
+    <authorUrl>https://webmasterskaya.xyz</authorUrl>
+    <version>__DEPLOY_VERSION__</version>
+    <description>pkg_sweetener_tools_DESCRIPTION</description>
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.pkg_sweetener_tools.sys.ini</language>
+        <language tag="ru-RU">ru-RU/ru-RU.pkg_sweetener_tools.sys.ini</language>
+    </languages>
+    <files>
+        <folder type="plugin" group="system" id="sweetener_tools">plg_system_sweetener_tools</folder>
+    </files>
+    <updateservers>
+        <server type="extension" priority="1" name="joomla-sweetener-tools">
+            https://webmasterskaya.xyz/update?extension=pkg_sweetener_tools
+        </server>
+    </updateservers>
+</extension>
